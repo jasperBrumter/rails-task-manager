@@ -13,3 +13,57 @@
  *= require_tree .
  *= require_self
  */
+body {
+  margin: 0;
+}
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(120,120,120,0.2), rgba(120,120,120,0.1)), url("https://images.pexels.com/photos/7095/people-coffee-notes-tea.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  z-index: -1;
+}
+
+.container {
+  width: 1000px;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+
+}
+.button-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 100px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: right;
+}
+
+.button-new {
+  height: 40px;
+  width: 100px;
+  border-radius: 8px;
+  border: 2px solid blue;
+  background-color: rgba(240,240,240,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

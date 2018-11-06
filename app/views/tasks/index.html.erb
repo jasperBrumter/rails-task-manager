@@ -1,0 +1,11 @@
+  <% @tasks.each do |task|%>
+
+    <%= link_to task_path(task) do %>
+      <div class="taskcard">
+        <h1><%= task.title %></h1>
+        <p><%=  task.details %> </p>
+      </div>
+    <% end  %>
+
+  <% end %>
+

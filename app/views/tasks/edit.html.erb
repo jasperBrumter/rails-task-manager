@@ -1,0 +1,14 @@
+<div class="blank">
+  <%= form_for(@task) do |f| %>
+  <%= f.label :title %><br>
+  <%= f.text_field :title %><br><br>
+
+  <%= f.label :details %><br>
+  <%= f.text_field :details %><br><br>
+
+  <%= f.label :completed %>
+  <%= f.check_box :completed %><br><br>
+
+  <%= f.submit%>
+  <% end %>
+</div>

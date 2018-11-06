@@ -1,0 +1,6 @@
+<div class="singletask">
+  <%= link_to("Edit", edit_path, {class: "button-new"}) %>
+  <%= link_to("Destroy", destroy_path, {class: "button-new", method: "delete"}) %>
+  <h1><%= @task.title %></h1>
+  <p><%= @task.details %></p>
+</div>
